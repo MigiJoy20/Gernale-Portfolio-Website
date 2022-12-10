@@ -205,59 +205,54 @@ header.sticky{
 	margin-bottom: 4rem;
 }
 
-.skills-container {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	align-items: center;
-	gap: 2rem;
-	margin-top: 4rem;
-  }
-  .skills-img img {
-	width: 80%;
-	padding-left: 4rem;
-	object-position: center;
-  }
-  .bars-box {
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1rem 0;
-	margin-bottom: 1rem;
-  }
-  .bars-box h3,
-  span {
-	font-size: 1.1rem;
-	font-weight: 500;
-  }
-  .light-bar {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 0.5rem;
-	background: hsla(260, 100%, 44%, 0.4);
-	border-radius: 0.5rem;
-  }
-  .percent-bar {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	height: 0.5rem;
-	background: var(--main-color);
-	border-radius: 0.5rem;
-  }
-  .html-bar {
-	width: 94%;
-  }
-  .css-bar {
-	width: 84%;
-  }
-  .js-bar {
-	width: 74%;
-  }
-  .react-bar {
-	width: 80%;
+.skills{
+    flex:1 1 40rem;
+}
+
+.skills .progress{
+    padding:1rem 0;
+}
+.skills .progress h3{
+    display: flex;
+    justify-content: space-between;
+    padding:.7rem 0;
+    font-size: 1.7rem;
+    color:#111;
+    font-weight: 400;
+}
+
+.skills .progress .bar{
+    width:100%;
+    background:#ccc;
+    overflow:hidden;
+    height:1rem;
+    border-radius: 50rem;
+}
+
+.skills .progress .bar span{
+    display:block;
+    height:100%;
+    background:var(--main-color);
+    border-radius: 50rem;
+}
+
+.skills .progress:nth-child(1) .bar span{
+    width:60%;
+}
+
+.skills .progress:nth-child(2) .bar span{
+    width:50%;
+}
+
+.skills .progress:nth-child(3) .bar span{
+    width:55%;
+}
+
+.skills .progress:nth-child(4) .bar span{
+    width:45%;
+}
+.skills .progress:nth-child(5) .bar span{
+	width:45%;
 }
 .services{
 	--bg-color: #ffd0d7;
